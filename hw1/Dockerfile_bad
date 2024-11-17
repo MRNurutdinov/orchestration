@@ -1,0 +1,16 @@
+# большой образ, можно сократить до slim
+FROM python:3.12
+
+
+# Копируем все файлы из текущей директории
+COPY . /app
+
+RUN echo "ХЕЕЕЙ, скопировал файл"
+RUN pip install --upgrade pip
+RUN pip install numpy
+RUN pip install -r app/project/req.txt
+
+VOLUME project/pictures
+
+# Запускаем несколько процессов одновременно
+CMD ["python", "app/project/main.py"]
