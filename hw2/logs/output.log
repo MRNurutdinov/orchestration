@@ -115,3 +115,43 @@ consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff7e0183d0>
 2024-11-12 02:05:28,825 - root - INFO - get: Это цифра 84, 02:05:28.825016
 2024-11-12 02:05:30,830 - root - INFO - get: Это цифра 85, 02:05:30.829963
 2024-11-12 02:05:32,833 - root - INFO - get: Это цифра 86, 02:05:32.833819
+2024-11-19 08:20:13,237 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:13,312 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:13,321 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff827083d0>
+2024-11-19 08:20:13,875 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:13,884 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:13,890 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff903b83d0>
+2024-11-19 08:20:14,373 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:14,384 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:14,389 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff8a0283d0>
+2024-11-19 08:20:15,130 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:15,141 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:15,146 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffffb2fe83d0>
+2024-11-19 08:20:16,268 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:16,279 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:16,284 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff7fe883d0>
+2024-11-19 08:20:18,214 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:18,223 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:18,228 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff892f83d0>
+2024-11-19 08:20:21,748 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:21,757 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:21,762 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffffa96b83d0>
+2024-11-19 08:20:28,506 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:28,515 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:28,520 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff955a83d0>
+2024-11-19 08:20:41,653 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:20:41,664 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:20:41,668 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffff81f383d0>
+2024-11-19 08:21:07,602 - aiokafka.consumer.subscription_state - INFO - Updating subscribed topics to: frozenset({'topic_example'})
+2024-11-19 08:21:07,612 - aiokafka - ERROR - Unable connect to "kafka:9092": [Errno -2] Name or service not known
+2024-11-19 08:21:07,617 - asyncio - ERROR - Unclosed AIOKafkaConsumer
+consumer: <aiokafka.consumer.consumer.AIOKafkaConsumer object at 0xffffbc5083d0>

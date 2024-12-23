@@ -28,6 +28,12 @@ services:
       KAFKA_AUTO_CREATE_TOPICS_ENABLE: "true" # не секреты
     networks:
       - network_exp
+    healthcheck:
+      test: [ "CMD", "curl", "-f", "localhost:9092" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
   consumer:
     build:
       context: .
@@ -45,6 +51,7 @@ services:
       TOPIC_NAME: ${TOPIC_NAME}
     depends_on:
       - producer
+    command: [ "python", "consumer.py" ]
   producer:
     build:
       context: .
@@ -60,6 +67,7 @@ services:
       TOPIC_NAME: ${TOPIC_NAME}
     depends_on:
       - kafka
+
 networks:
   network_exp:
     driver: bridge
