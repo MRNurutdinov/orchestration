@@ -18,7 +18,6 @@
          cpus: '0.25'
          memory: 300M
    ```
-   Для старых версий можно использовать флаг ``--compatibility``. Проверить применение ограничений можно командой docker stats.
 2)  Пример:
    ```cmd
       docker-compose up service_name1 service_name2
