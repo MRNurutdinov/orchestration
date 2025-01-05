@@ -23,3 +23,4 @@
       docker-compose up service_name1 service_name2
    ```
 
+3) Проверка на то, что сервис поднялся и работает можно сделать через **healthcheck**(пример в docker-compose)
