@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: producer
+  labels:
+    app: producer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: producer
+  template:
+    metadata:
+      labels:
+        app: producer
+    spec:
+      initContainers:
+        - name: init-setup
+          image: alpine:latest
+          command: [ "/bin/sh", "-c" ]
+          args:
+            - echo "Setting up environment..." &&
+              mkdir -p /app/data/input /app/data/output &&
+              echo "This is a sample input file" > /app/data/input/sample.txt &&
+              touch /app/data/output/placeholder.txt
+      containers:
+        - name: producer
+          image: app_init_producer:latest
+          imagePullPolicy: Never
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
+          env:
+            - name: KAFKA_HOST
+              value: "kafka-service.kafka.svc.cluster.local:9092"
+            - name: GROUP_ID
+              value: "my-group"
+            - name: TOPIC_NAME
+              value: "my-topic"
+      restartPolicy: Always
