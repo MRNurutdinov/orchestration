@@ -39,10 +39,8 @@ services:
     restart: always
     networks:
       - network_exp
-    environment:
-      KAFKA_HOST: ${KAFKA_HOST}
-      GROUP_ID: ${GROUP_ID}
-      TOPIC_NAME: ${TOPIC_NAME}
+    env_file:
+      - ./.env
     depends_on:
       - producer
     command: [ "python", "consumer.py" ]
@@ -55,10 +53,8 @@ services:
     restart: always
     networks:
       - network_exp
-    environment:
-      KAFKA_HOST: ${KAFKA_HOST}
-      GROUP_ID: ${GROUP_ID}
-      TOPIC_NAME: ${TOPIC_NAME}
+    env_file:
+      - ./.env
     depends_on:
       - kafka
 
